@@ -18,7 +18,7 @@ namespace FindTheExit2
         /// </summary>
         public Node<T> Head
         {
-            get; set;
+            get; private set;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace FindTheExit2
         /// </summary>
         public Node<T> Tail
         {
-            get; set;
+            get; private set;
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace FindTheExit2
         /// </summary>
         public int Size
         {
-            get; set;
+            get; private set;
         }
 
         /// <summary>
