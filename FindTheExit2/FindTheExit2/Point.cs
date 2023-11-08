@@ -28,6 +28,21 @@ namespace FindTheExit
         }
 
         /// <summary>
+        /// Gets or sets the parent point of the point(for the BreadthFirstSearch() method).
+        /// </summary>
+        public Point ParentPoint
+        {
+            get; set;
+        }
+
+        public Point(int row, int column, Point parentPoint)
+        {
+            this.Row = row;
+            this.Column = column;
+            this.ParentPoint = parentPoint;
+        }
+
+        /// <summary>
         /// Initializes an instance of Point with the specified row and column.
         /// </summary>
         /// <param name="row"></param>
